@@ -1,0 +1,58 @@
+.calculator {
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+    border: 3px solid yellowgreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+   .First {
+      border-right: 1px solid yellow;
+    }
+    .Second {
+      border-right: 1px solid yellow;
+    }
+    .One{
+        grid-row: 2/2;
+        grid-column: 1/1;
+    }
+    .Two{
+      grid-row: 2/2;
+      grid-column: 2/2;
+  }
+  .Three{
+      grid-row: 2/2;
+      grid-column: 3/3;
+  }
+  .Four{
+      grid-row: 2/2;
+      grid-column: 4/4;
+  }
+  .Five{
+      grid-row: 2/2;
+      grid-column: 5/5;
+  }
+  .Six{
+      grid-row: 2/2;
+      grid-column: 6/6;
+  }
+  /* смартфон */
+  @media only screen and (max-width: 400px) {
+    .calculator {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /* планшет */
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .calculator {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      color: red;
+    }
+  }
+  /* компьютер */
+  @media only screen and (min-width: 1500px) {
+    .calculator {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
